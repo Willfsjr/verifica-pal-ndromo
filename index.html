@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter&display=swap" rel="stylesheet">
+  <link href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+" rel="stylesheet" />
+  <link href="
+https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
+" rel="stylesheet" />
+  <title>Verificar Palíndromo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="content">
+      <div class="content__corner-rectangle"></div>
+      <div class="content__main">
+        <section>
+          <h1 class="section__title">Verificar <span>Palíndromo</span></h1>
+          <form class="form">
+            <label class="form__label">
+              Digite uma palavra ou frase
+            </label>
+            <input id="palavra" class="form__input" type="text" placeholder="Palavra ou frase">
+            <div class="form__buttons">
+              <button onclick="verificarPalindromo()" type="button" class="button primary">Verificar</button>
+              <button onclick="reiniciar()" type="button" class="button secondary">Reiniciar</button>
+            </div>
+          </form>
+        </section>
+        <section class="section--results">
+          <article>
+            <p class="palindromo__title">Palíndromos encontrados</p>
+            <div class="palindromo__container">
+              <ul id="lista-palindromos" class="palindromo__list"></ul>
+            </div>
+          </article>
+          <article>
+            <p class="palindromonao__title">Palíndromos não encontrados</p>
+            <div class="palindromonao__container">
+              <ul id="lista-sem-palindromos" class="palindromonao__list"></ul>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+  </main>
+  <div class="background__detail">
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
